@@ -3,7 +3,7 @@ import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import mean_squared_error, r2_score
 
-data = pd.read_csv('C:/My_work/ML_projects/kaggle/Student_marks/Student_Marks.csv')
+data = pd.read_csv('Student_Marks.csv')
 X = data[['number_courses','time_study']].values
 y = data['Marks'].values
 
