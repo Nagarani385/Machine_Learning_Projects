@@ -17,7 +17,6 @@ model = LogisticRegression(max_iter= 5000)
 model.fit(X_train, y_train)
 train_accuracy = accuracy_score(y_train, y_train)
 y_prediction = model.predict(X_test)
-
 print("\nConfusion Matrix:")
 print(confusion_matrix(y_test, y_prediction))
 print("\nClassification Report:")
